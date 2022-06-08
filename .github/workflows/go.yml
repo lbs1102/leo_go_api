@@ -7,16 +7,14 @@ on:
     branches: ["main"]
 
 jobs:
-  cmd_test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Display the path
-        run: echo %PATH%
-        shell: cmd
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - name: Display the path
+        run: echo %PATH%
+        shell: cmd
 
       - name: Set up Go
         uses: actions/setup-go@v3
