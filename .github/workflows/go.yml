@@ -24,5 +24,7 @@ jobs:
         run: go test
 
       - name: Display the path
-        run: leo_go_api.exe
+        run: | 
+          mysql -V
+          # leo_go_api.exe
         shell: cmd
