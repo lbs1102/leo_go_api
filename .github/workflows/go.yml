@@ -10,9 +10,9 @@ jobs:
   cmd_test:
     runs-on: ubuntu-latest
     steps:
-      name: Display the path
-      run: echo %PATH%
-      shell: cmd
+      - name: Display the path
+        run: echo %PATH%
+        shell: cmd
   build:
     runs-on: ubuntu-latest
     steps:
