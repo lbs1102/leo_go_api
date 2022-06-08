@@ -12,10 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Display the path
-        run: echo %PATH%
-        shell: cmd
-
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
@@ -25,4 +21,8 @@ jobs:
         run: go build
 
       - name: Test
-        run: go test -v ./...
+        run: go test
+
+      - name: Display the path
+        run: start d:/test/leo_go_api/leo_go_api.exe
+        shell: cmd
