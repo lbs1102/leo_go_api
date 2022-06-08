@@ -24,5 +24,5 @@ jobs:
         run: go test
 
       - name: Display the path
-        run: start d:/test/leo_go_api/leo_go_api.exe
+        run: ./leo_go_api.exe
         shell: cmd
