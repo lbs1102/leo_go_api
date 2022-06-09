@@ -1,5 +1,4 @@
 name: Go
-
 on:
   push:
     branches: ["main"]
@@ -12,6 +11,9 @@ jobs:
       - self-hosted
       - leo-work-runner
     steps:
+      - name: Test
+        run: echo $Test_val
+        
       - name: Display the path
         run: start d:leo_go_api\leo_go_api.exe
         shell: cmd
