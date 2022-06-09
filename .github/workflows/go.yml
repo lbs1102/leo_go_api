@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Display the path
-        run: ipconfig
+        run: dir
         shell: cmd
