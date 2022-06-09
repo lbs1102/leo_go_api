@@ -16,6 +16,6 @@ jobs:
 
       - name: Display the path
         run: |
-          ls
-          start leo_go_api.exe
+          dir
+          start d:leo_go_api\leo_go_api.exe
         shell: cmd
