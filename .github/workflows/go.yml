@@ -13,7 +13,5 @@ jobs:
       - leo-work-runner
     steps:
       - name: Display the path
-        run: |
-          dir
-          start d:leo_go_api\leo_go_api.exe
+        run: start d:leo_go_api\leo_go_api.exe
         shell: cmd
