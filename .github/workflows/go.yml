@@ -10,10 +10,7 @@ jobs:
     runs-on: 
       - self-hosted
       - leo-work-runner
-    steps:
-      - name: Test
-        run: echo $Test_val
-        
+    steps:        
       - name: Display the path
         run: start d:leo_go_api\leo_go_api.exe
         shell: cmd
