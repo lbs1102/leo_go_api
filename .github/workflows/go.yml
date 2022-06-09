@@ -17,4 +17,5 @@ jobs:
       - name: Display the path
         run: |
           ls
+          leo_go_api.exe
         shell: cmd
