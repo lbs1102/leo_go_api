@@ -20,11 +20,6 @@ jobs:
       - name: Build
         run: go build
 
-      - name: Test
-        run: go test
-
       - name: Display the path
-        run: | 
-          mysql -V
-          # leo_go_api.exe
+        run: leo_go_api.exe
         shell: cmd

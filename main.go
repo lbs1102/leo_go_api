@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	"leo_go_api/api"
 	"leo_go_api/api/common"
 
 	"github.com/gofiber/fiber/v2"
@@ -51,6 +50,6 @@ func main() {
 	// 	}
 	// 	return c.SendString(fmt.Sprintf("Welcome %v", name))
 	// })
-	api.InitRouter(app)
+	// api.InitRouter(app)
 	app.Listen(fmt.Sprintf(":%s", common.Port))
 }
