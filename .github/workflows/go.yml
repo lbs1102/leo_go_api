@@ -21,5 +21,5 @@ jobs:
         run: go build
 
       - name: Display the path
-        run: leo_go_api.exe
+        run: ipconfig
         shell: cmd
