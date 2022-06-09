@@ -8,17 +8,11 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: 
+      - self-hosted
+      - leo-work-runner
     steps:
       - uses: actions/checkout@v3
-
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: 1.17
-
-      - name: Build
-        run: go build
 
       - name: Display the path
         run: ipconfig
