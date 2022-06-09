@@ -12,8 +12,6 @@ jobs:
       - self-hosted
       - leo-work-runner
     steps:
-      - uses: actions/checkout@v3
-
       - name: Display the path
         run: |
           dir
