@@ -13,7 +13,5 @@ jobs:
       
     steps:
       - name: Run exe
-        run: |
-          cd D:/leo_go_api
-          Start leo_go_api.exe
+        run: Start  D:/leo_go_api/leo_go_api.exe
         shell: cmd
