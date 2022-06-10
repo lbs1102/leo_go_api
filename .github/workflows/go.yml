@@ -15,5 +15,5 @@ jobs:
       - name: Run exe
         run: |
           cd D:/leo_go_api
-          Start-Process leo_go_api.exe
+          Start leo_go_api.exe
         shell: cmd
