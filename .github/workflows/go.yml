@@ -13,5 +13,5 @@ jobs:
       
     steps:
       - name: Display the path
-        run: RUNNER_TRACKING_ID=""    
+        run: echo 123456789  
         shell: cmd
