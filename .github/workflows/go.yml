@@ -11,6 +11,7 @@ jobs:
       - self-hosted
       - leo-work-runner
       
+    steps:
       - name: Display the path
         run: echo test        
         shell: cmd
