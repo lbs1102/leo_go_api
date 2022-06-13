@@ -12,9 +12,13 @@ jobs:
       - leo-work-runner
       
     steps:
-      - name: Run exe
+      - name: clear
+        run: taskkill /f /im leo_go_api.exe
+        shell: cmd
+      - name: Run exe      
+        if: always()
         run: |
-         - taskkill /f /im leo_go_api.exe
          - cd /D d:\leo_go_api
          - start leo_go_api.exe
         shell: cmd
+    
