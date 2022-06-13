@@ -18,7 +18,7 @@ jobs:
       - name: Run exe      
         if: always()
         run: |
-         - cd /D d:\leo_go_api
-         - start leo_go_api.exe
+         cd /D d:\leo_go_api
+         start leo_go_api.exe
         shell: cmd
     
