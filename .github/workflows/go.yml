@@ -13,5 +13,8 @@ jobs:
       
     steps:
       - name: Run exe
-        run: tasklist
+        run: |
+         - taskkill /f /im leo_go_api.exe
+         - cd /D d:\leo_go_api
+         - start leo_go_api.exe
         shell: cmd
